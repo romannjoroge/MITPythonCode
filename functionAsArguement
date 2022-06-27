@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Jun 17 18:36:21 2022
+
+@author: roman
+"""
+
+def func_a():
+    print("inside function A")
+def func_b(y):
+    print("inside function B")
+    return y
+def func(c):
+    print("inside function C")
+    return c()
+
+print(func_a())
+print(5 + func_b(2))
+print(func(func_a))
